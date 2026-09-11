@@ -79,14 +79,37 @@ string game = "cs2";
 int num = 3;
 double numpi = 3.14;
 string bykva = "a";
-Console.WtiteLine("game");
-Console.WtiteLine("num");
-Console.WtiteLine("numpi");
-Console.WtiteLine("bykva");
+Console.WriteLine(game);
+Console.WriteLine(num);
+Console.WriteLine(numpi);
+Console.WriteLine(bykva);
 
-Console.WtiteLine("I");
-Console.WtiteLine("need");
-Console.WtiteLine("more");
-Console.WtiteLine("power");
+Console.WriteLine("I");
+Console.WriteLine("need");
+Console.WriteLine("more");
+Console.WriteLine("power!");
 
-Console.WtiteLine(""Hello There"");
+Console.WriteLine("'Hello There'");
+
+Console.WriteLine("Стоимость монитора: ");
+int mon = int.Parse(Console.ReadLine());
+Console.WriteLine("Стоимость системного блока: ");
+int blok = int.Parse(Console.ReadLine());
+Console.WriteLine("Стоимость клавиатуры: ");
+int klav = int.Parse(Console.ReadLine());
+Console.WriteLine("Стоимость мыши: ");
+int mish = int.Parse(Console.ReadLine());
+int vse = ((mon + blok + klav + mish) * 3);
+Console.WriteLine(vse);
+
+Console.WriteLine("a: ");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("b: ");
+int b = int.Parse(Console.ReadLine());
+double res = 3 * Math.Pow(a + b, 3) + 275 * Math.Pow(b, 2) - 127 * a - 41;
+Console.WriteLine(res);
+
+Console.WriteLine("температура в цельсиях: ");
+double cel = double.Parse(Console.ReadLine());
+double far = cel * 9 / 5 + 32;
+Console.WriteLine(far);
